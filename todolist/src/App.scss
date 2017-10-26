@@ -1,0 +1,121 @@
+.App {
+  position: relative;
+  max-width: 450px;
+  height: 100vh;
+  padding: 45px 0;
+  margin: 0 auto;
+  box-sizing: border-box;
+  background-color: #ECECEC;
+  .Add-Todo {
+    position: absolute;
+    top: 0;
+    height: 45px;
+    z-index: 99;
+    border: 1px solid #D1D1D1;
+    background-color: rgba(255,255,255,0.9);
+    .Add-input {
+      height: 100%;
+      width: 350px;
+      padding: 0 10px;
+      box-sizing: border-box;
+      outline: none;
+      border: none;
+      color: #807F83;
+    }
+    .Add-btn {
+      height: 100%;
+      width: 98px;
+      border: none;
+      outline: none;
+      &:hover {
+        color: #fff;
+        background-color: #37BC64;
+      }
+      &:active {
+        color: #ffd;
+        background-color: #37BC90;
+      }
+    }
+  }
+  .todolist {
+    height: 100%;
+    overflow-y: scroll;
+    .todo-item {
+      position: relative;
+      height: 45px;
+      line-height: 45px;
+      padding: 0 10px;
+      margin: 5px 0;
+      list-style-type: none;
+      color: #000;
+      .todo-ckeckbox {
+        height: 16px;
+        width: 16px;
+        margin-right: 10px;
+      }
+      .todo-remove {
+        display: none;
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        top: 50%;
+        right: 10px;
+        margin-top: -10px;
+        line-height: 20px;
+        text-align: center;
+        border-radius: 50%;  
+        &:hover {
+          color: #5CC287;
+          background-color: #fff;
+        }
+      }
+      &:hover {
+        cursor: pointer;
+        background-color: #37BC64;
+        color: #fff;
+        .todo-remove {
+          display: block;
+        }
+      }
+      &.completed {
+        text-decoration: line-through;
+        color: #D1D1D1;
+        &:hover {
+          cursor: default;
+          background-color: #606060;
+          color: #fff;
+          .todo-remove {
+            &:hover {
+              color: #fff;
+              background-color: #5CC287;
+            }
+          }
+        }
+      }
+    }
+  }
+  .Footer {
+    position: absolute;
+    width: 100%;
+    height: 45px;
+    margin: 0;
+    line-height: 45px;
+    bottom: 0;
+    text-align: center;
+    font-size: 0px;
+    background-color: rgba(255,255,255,0.9);
+    .Footer-btn {
+      height: 100%;
+      width: 150px;
+      display: inline-block;
+      text-align: center;
+      font-size: 16px;
+      color: #fff;
+      background-color: #37BC64;
+      &.active {
+        color: #606060;
+        background-color: #D1D1D1;
+      }
+    }
+  }
+}

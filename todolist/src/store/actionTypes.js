@@ -1,0 +1,22 @@
+export const ADD_TODO = 'ADD_TODO';
+
+export const TOGGLE_TODO = 'TOGGLE_TODO';
+
+export const SET_VISIBILITY_FILTER = 'SET_VISIBILITY_FILTER';
+
+export const FETCH_POSTS_REQUEST = 'FETCH_POSTS_REQUEST';
+
+export const FETCH_POSTS_FAILURE = 'FETCH_POSTS_FAILURE';
+
+export const FETCH_POSTS_SUCCESS = 'FETCH_POSTS_SUCCESS';
+
+export const RECEIVE_POSTS = 'RECEIVE_POSTS';
+
+export const REQUEST_POSTS = 'REQUEST_POSTS';
+
+export const INITSTATE = 'INITSTATE';
+
+export const REMOVE_TODO = 'REMOVE_TODO';
+
+
+
